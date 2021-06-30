@@ -32,13 +32,13 @@ use Webmozart\Assert\Assert;
 class CustomerOptionGroupFactory implements CustomerOptionGroupFactoryInterface
 {
     /** @var CustomerOptionRepositoryInterface */
-    protected $customerOptionRepository;
+    private $customerOptionRepository;
 
     /** @var ProductRepositoryInterface */
-    protected $productRepository;
+    private $productRepository;
 
     /** @var \Faker\Generator */
-    protected $faker;
+    private $faker;
 
     public function __construct(
         CustomerOptionRepositoryInterface $customerOptionRepository,

@@ -21,10 +21,10 @@ use Faker\Generator;
 class CustomerOptionValueFactory implements CustomerOptionValueFactoryInterface
 {
     /** @var CustomerOptionValuePriceFactoryInterface */
-    protected $valuePriceFactory;
+    private $valuePriceFactory;
 
     /** @var Generator */
-    protected $faker;
+    private $faker;
 
     public function __construct(CustomerOptionValuePriceFactoryInterface $valuePriceFactory)
     {

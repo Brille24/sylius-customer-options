@@ -26,13 +26,13 @@ use Sylius\Component\Resource\Repository\RepositoryInterface;
 class CustomerOptionFactory implements CustomerOptionFactoryInterface
 {
     /** @var RepositoryInterface */
-    protected $customerOptionGroupRepository;
+    private $customerOptionGroupRepository;
 
     /** @var \Faker\Generator */
-    protected $faker;
+    private $faker;
 
     /** @var CustomerOptionValueFactoryInterface */
-    protected $customerOptionValueFactory;
+    private $customerOptionValueFactory;
 
     public function __construct(
         CustomerOptionGroupRepositoryInterface $customerOptionGroupRepository,
